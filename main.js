@@ -20,3 +20,9 @@ console.log(names.add())
 arr.forEach(element => {
     console.log(element)
 });
+
+function add(a, b) {
+    return a + b;
+}
+
+console.log(add(3,9))
