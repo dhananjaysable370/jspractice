@@ -8,5 +8,11 @@ class Main{
         this.a = a;
         this.b = b;
     }
+    add() {
+        return this.a + this.b;
+    }
 }
-console.log(typeof(Main)) //Function
+
+let names = new Main(8, 33)
+console.log(names.add())
+// console.log(typeof(Main)) //Function
