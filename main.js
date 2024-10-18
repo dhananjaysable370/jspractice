@@ -25,4 +25,11 @@ function add(a, b) {
     return a + b;
 }
 
-console.log(add(3,9))
+console.log(add(3, 9))
+
+const sub = (a, b) => {
+    return a - b;
+}
+
+console.log(sub(5, 3))
+// console.log(typeof(sub)) //Function
