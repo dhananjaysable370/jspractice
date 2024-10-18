@@ -3,8 +3,8 @@ let arr = ['Dhananjay', 7, 33, false, null];
 //     console.log(arr[i]);
 // }
 
-class Main{
-    constructor(a,b) {
+class Main {
+    constructor(a, b) {
         this.a = a;
         this.b = b;
     }
@@ -16,3 +16,7 @@ class Main{
 let names = new Main(8, 33)
 console.log(names.add())
 // console.log(typeof(Main)) //Function
+
+arr.forEach(element => {
+    console.log(element)
+});
