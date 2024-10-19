@@ -1,35 +1,31 @@
-let arr = ['Dhananjay', 7, 33, false, null];
-// for (let i = 0; i < arr.length; i++){
-//     console.log(arr[i]);
-// }
-
-class Main {
-    constructor(a, b) {
-        this.a = a;
-        this.b = b;
+//binary Search
+let arr = [1, 2, 3, 4, 5, 6, 7];
+let binarySearch = (arr, key) => {
+    let start = 0;
+    let end = arr.length - 1;
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
+        if (arr[mid] == key) {
+            return mid;
+        }
+        else if (arr[mid] < key) {
+            start = mid + 1;
+        }
+        else {
+            end = mid - 1;
+        }
     }
-    add() {
-        return this.a + this.b;
+    return -1;
+}
+
+const linearSearch = (arr, key) => {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === key) {
+            return i;
+        }
     }
+    return -1;
 }
 
-let names = new Main(8, 33)
-console.log(names.add())
-// console.log(typeof(Main)) //Function
-
-arr.forEach(element => {
-    console.log(element)
-});
-
-function add(a, b) {
-    return a + b;
-}
-
-console.log(add(3, 9))
-
-const sub = (a, b) => {
-    return a - b;
-}
-
-console.log(sub(5, 3))
-// console.log(typeof(sub)) //Function
+console.log(binarySearch(arr, 3));
+console.log(linearSearch(arr, 5))
