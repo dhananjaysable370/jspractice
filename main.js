@@ -27,5 +27,14 @@ const linearSearch = (arr, key) => {
     return -1;
 }
 
-console.log(binarySearch(arr, 3));
-console.log(linearSearch(arr, 5))
+// console.log(binarySearch(arr, 3));
+// console.log(linearSearch(arr, 5))
+
+//try catch
+try {
+    let x = 5 / 0;
+} catch (error) {
+    console.log(error.message);
+} finally {
+    console.log('finaly block')
+}
